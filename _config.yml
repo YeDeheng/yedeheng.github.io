@@ -1,3 +1,9 @@
+# GitHub Pages (Jekyll) 站点配置
+title: Deheng Ye, 叶德珩
+description: Personal homepage of Deheng Ye (叶德珩), Ph.D. — Researcher at ByteDance Seed working on foundation models.
+lang: en
+url: https://yedeheng.github.io
 theme: jekyll-theme-minimal
-gems:
+plugins:
+  - jekyll-sitemap
   - jekyll-seo-tag
