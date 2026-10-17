@@ -7,96 +7,52 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2328'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23fff' text-anchor='middle'%3EDY%3C/text%3E%3C/svg%3E">
 <style>
   :root{
-    --bg:#ffffff;
     --text:#1f2328;
-    --text-2:#59636e;
-    --line:#d8dee4;
+    --muted:#59636e;
     --link:#0969da;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{
-    background:var(--bg);
+    background:#fff;
     color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",Roboto,Helvetica,Arial,sans-serif;
-    font-size:16px;
-    line-height:1.75;
+    font-size:14px;
+    line-height:1.5;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
-    padding:2.25rem 1.25rem 3.5rem;
+    padding:1.25rem 1rem 2rem;
   }
-  main{max-width:44rem;margin:0 auto}
-  header{padding-bottom:1.4rem;border-bottom:1px solid var(--line)}
-  h1{font-size:clamp(1.7rem,5.5vw,2.3rem);font-weight:650;letter-spacing:-.01em;line-height:1.3;color:var(--text)}
-  h1 .zh{color:var(--text-2);font-weight:500}
-  section{border-top:1px solid var(--line);margin-top:1.9rem;padding-top:1.4rem}
-  h2{font-size:1.02rem;font-weight:600;color:var(--text);margin-bottom:.55rem}
-  p{font-size:1rem}
-  ul{list-style:none}
-  li{position:relative;padding-left:1.15rem;margin:.32rem 0;font-size:1rem}
-  li::before{content:"";position:absolute;left:.15rem;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--text-2)}
+  main{max-width:46rem;margin:0 auto}
+  h1{font-size:1.3rem;font-weight:650;letter-spacing:-.01em;line-height:1.25;margin-bottom:.7rem}
+  h1 .zh{color:var(--muted);font-weight:500}
+  .row{margin:.34rem 0}
+  .lbl{font-weight:600;color:var(--muted);margin-right:.45em}
   a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent}
   a:hover{border-bottom-color:var(--link)}
   @media (min-width:768px){
-    body{font-size:17px;padding:3.5rem 2rem 5rem}
-    main{max-width:46rem}
-    li{margin:.45rem 0}
+    body{font-size:15px;padding:2.5rem 2rem 3rem}
+    .row{margin:.45rem 0}
   }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>Deheng Ye <span class="zh">（叶德珩）</span></h1>
-  </header>
+  <h1>Deheng Ye <span class="zh">（叶德珩）</span></h1>
 
-  <section>
-    <h2>Short Bio</h2>
-    <p>I am a Researcher at ByteDance Seed working on foundation models.</p>
-  </section>
+  <p class="row"><span class="lbl">Short Bio</span>I am a Researcher at ByteDance Seed working on foundation models.</p>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li>ByteDance (2026-now)</li>
-      <li>Tencent (2017-2026)</li>
-    </ul>
-  </section>
+  <p class="row"><span class="lbl">Experience</span>ByteDance (2026-now); Tencent (2017-2026)</p>
 
-  <section>
-    <h2>Selected Projects</h2>
-    <ul>
-      <li>SeedXxx model (P&amp;C for now)</li>
-      <li>JueWu AI Series: 1.0 (supervised learning), 2.0 (reinforcement learning), 3.0 (hierarchical RL)</li>
-      <li>Code understanding &amp; generation (as a postdoc at Microsoft)</li>
-    </ul>
-  </section>
+  <p class="row"><span class="lbl">Selected Projects</span>SeedXxx model (P&amp;C for now); JueWu AI Series: 1.0 (supervised learning), 2.0 (reinforcement learning), 3.0 (hierarchical RL); Code understanding &amp; generation (as a postdoc at Microsoft)</p>
 
-  <section>
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>"Adaptvision: efficient vision-language models" (2026)</li>
-      <li>"More agents is all you need" (2024)</li>
-      <li>"RLTF" (2023)</li>
-      <li>"Mastering complex control with deep reinforcement learning" (2020)</li>
-      <li>"Convolutional and recurrent neural networks for text categorization" (2017)</li>
-    </ul>
-  </section>
+  <p class="row"><span class="lbl">Selected Publications</span>"Adaptvision: efficient vision-language models" (2026); "More agents is all you need" (2024); "RLTF" (2023); "Mastering complex control with deep reinforcement learning" (2020); "Convolutional and recurrent neural networks for text categorization" (2017)</p>
 
-  <section>
-    <h2>Adjunct Appointments</h2>
-    <p>Director of the Tencent-NTU Joint Research Laboratory (CENTURY) (until 2026)</p>
-  </section>
+  <p class="row"><span class="lbl">Adjunct Appointments</span>Director of the Tencent-NTU Joint Research Laboratory (CENTURY) (until 2026)</p>
 
-  <section>
-    <h2>Work Performance</h2>
-    <p>was promoted to become the youngest Leader, Director, and Research Partner of Tencent AI before 2025.</p>
-  </section>
+  <p class="row"><span class="lbl">Work Performance</span>was promoted to become the youngest Leader, Director, and Research Partner of Tencent AI before 2025.</p>
 
-  <section>
-    <h2>Others</h2>
-    <p>looking for top talents via <a href="mailto:ydh@bytedance.com">ydh@bytedance.com</a> or <a href="mailto:ydyl1991@gmail.com">ydyl1991@gmail.com</a></p>
-  </section>
+  <p class="row"><span class="lbl">Others</span>looking for top talents via <a href="mailto:ydh@bytedance.com">ydh@bytedance.com</a> or <a href="mailto:ydyl1991@gmail.com">ydyl1991@gmail.com</a></p>
 </main>
 
 <!-- 旧版完整内容（已注释保留，未展示） -->
