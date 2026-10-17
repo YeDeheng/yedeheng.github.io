@@ -9,7 +9,6 @@
   :root{
     --text:#1f2328;
     --muted:#59636e;
-    --link:#0969da;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -28,11 +27,24 @@
   h1 .zh{color:var(--muted);font-weight:500}
   .row{margin:.34rem 0}
   .lbl{font-weight:600;color:var(--muted);margin-right:.45em}
-  a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent}
-  a:hover{border-bottom-color:var(--link)}
   @media (min-width:768px){
-    body{font-size:15px;padding:2.5rem 2rem 3rem}
-    .row{margin:.45rem 0}
+    body{
+      display:flex;
+      min-height:100vh;
+      align-items:center;
+      font-size:15px;
+      padding:2.5rem 2rem;
+    }
+    main{width:100%;max-width:52rem}
+    h1{font-size:1.5rem;margin-bottom:1.25rem}
+    .row{
+      display:grid;
+      grid-template-columns:13rem 1fr;
+      gap:1.25rem;
+      align-items:baseline;
+      margin:.55rem 0;
+    }
+    .lbl{text-align:right;margin-right:0}
   }
 </style>
 </head>
@@ -52,7 +64,7 @@
 
   <p class="row"><span class="lbl">Work Performance</span>was promoted to become the youngest Leader, Director, and Research Partner of Tencent AI before 2025.</p>
 
-  <p class="row"><span class="lbl">Others</span>looking for top talents via <a href="mailto:ydh@bytedance.com">ydh@bytedance.com</a> or <a href="mailto:ydyl1991@gmail.com">ydyl1991@gmail.com</a></p>
+  <p class="row"><span class="lbl">Others</span>looking for top talents via ydh@bytedance.com or ydyl1991@gmail.com</p>
 </main>
 
 <!-- 旧版完整内容（已注释保留，未展示） -->
