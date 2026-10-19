@@ -66,15 +66,17 @@
 
 <script>
 (function(){
+  var d = new Date();
+  var key = 'yedeheng_github_io_visits_' + d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
   var el = document.getElementById('visits');
   var show = function(v){ if (el && v !== undefined) el.innerText = v; };
   var get = function(){
-    fetch('https://countapi.mileshilliard.com/api/v1/get/yedeheng_github_io_visits')
+    fetch('https://countapi.mileshilliard.com/api/v1/get/' + key)
       .then(function(r){ return r.json(); })
       .then(function(d){ show(d.value); })
       .catch(function(){});
   };
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/yedeheng_github_io_visits')
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + key)
     .then(function(r){ return r.json(); })
     .then(function(d){ show(d.value); })
     .catch(get);
