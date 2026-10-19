@@ -60,7 +60,26 @@
   <p class="row">Work Performance: was promoted to become the youngest Leader, Director, and Research Partner of Tencent AI before 2025.</p>
 
   <p class="row">Others: looking for top talents via ydh@bytedance.com or ydyl1991@gmail.com</p>
+
+  <p class="row">Visits: <span id="visits">0</span></p>
 </main>
+
+<script>
+(function(){
+  var el = document.getElementById('visits');
+  var show = function(v){ if (el && v !== undefined) el.innerText = v; };
+  var get = function(){
+    fetch('https://countapi.mileshilliard.com/api/v1/get/yedeheng_github_io_visits')
+      .then(function(r){ return r.json(); })
+      .then(function(d){ show(d.value); })
+      .catch(function(){});
+  };
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/yedeheng_github_io_visits')
+    .then(function(r){ return r.json(); })
+    .then(function(d){ show(d.value); })
+    .catch(get);
+})();
+</script>
 
 <!-- 旧版完整内容（已注释保留，未展示） -->
 <!--
