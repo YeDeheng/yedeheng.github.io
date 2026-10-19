@@ -61,7 +61,7 @@
 
   <p class="row">Others: looking for top talents via ydh@bytedance.com or ydyl1991@gmail.com</p>
 
-  <p class="row">Visits Today: <span id="visits">0</span></p>
+  <p class="row">Visits Today: <span id="visits">…</span></p>
 </main>
 
 <script>
@@ -71,12 +71,12 @@
   var el = document.getElementById('visits');
   var show = function(v){ if (el && v !== undefined) el.innerText = v; };
   var get = function(){
-    return fetch('https://countapi.mileshilliard.com/api/v1/get/' + key)
+    return fetch('https://countapi.mileshilliard.com/api/v1/get/' + key, {cache:'no-store'})
       .then(function(r){ return r.json(); })
       .then(function(d){ show(d.value); });
   };
   get().catch(function(){});
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + key)
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + key, {cache:'no-store'})
     .then(function(r){ return r.json(); })
     .then(function(d){ show(d.value); })
     .catch(function(){ get().catch(function(){}); });
