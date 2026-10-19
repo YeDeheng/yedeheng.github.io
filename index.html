@@ -80,7 +80,7 @@
     .then(function(r){ return r.json(); })
     .then(function(d){ show(d.value); })
     .catch(function(){ get().catch(function(){}); });
-  setInterval(function(){ get().catch(function(){}); }, 60000);
+  setInterval(function(){ get().catch(function(){}); }, 15000);
 })();
 </script>
 
