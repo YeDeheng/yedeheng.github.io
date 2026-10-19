@@ -71,15 +71,16 @@
   var el = document.getElementById('visits');
   var show = function(v){ if (el && v !== undefined) el.innerText = v; };
   var get = function(){
-    fetch('https://countapi.mileshilliard.com/api/v1/get/' + key)
+    return fetch('https://countapi.mileshilliard.com/api/v1/get/' + key)
       .then(function(r){ return r.json(); })
-      .then(function(d){ show(d.value); })
-      .catch(function(){});
+      .then(function(d){ show(d.value); });
   };
+  get().catch(function(){});
   fetch('https://countapi.mileshilliard.com/api/v1/hit/' + key)
     .then(function(r){ return r.json(); })
     .then(function(d){ show(d.value); })
-    .catch(get);
+    .catch(function(){ get().catch(function(){}); });
+  setInterval(function(){ get().catch(function(){}); }, 60000);
 })();
 </script>
 
