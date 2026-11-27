@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Deheng Ye (叶德珩), Ph.D. — Researcher at ByteDance Seed working on foundation models. Experience: ByteDance (2026-now), Tencent (2017-2026).">
+<meta name="author" content="Deheng Ye">
+<link rel="canonical" href="https://yedeheng.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Deheng Ye, 叶德珩, Ph.D.">
+<meta property="og:description" content="Deheng Ye (叶德珩), Ph.D. — Researcher at ByteDance Seed working on foundation models.">
+<meta property="og:url" content="https://yedeheng.github.io/">
+<meta property="og:site_name" content="Deheng Ye, 叶德珩, Ph.D.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deheng Ye, 叶德珩, Ph.D.">
+<meta name="twitter:description" content="Deheng Ye (叶德珩), Ph.D. — Researcher at ByteDance Seed working on foundation models.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Deheng Ye","alternateName":"叶德珩","url":"https://yedeheng.github.io/","jobTitle":"Researcher","worksFor":{"@type":"Organization","name":"ByteDance Seed"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Nanyang Technological University"}}
+</script>
+<title>Deheng Ye, 叶德珩, Ph.D.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2328'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23fff' text-anchor='middle'%3EDY%3C/text%3E%3C/svg%3E">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:#fff;
+    color:#1f2328;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",Roboto,Helvetica,Arial,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    padding:.3rem 1rem .45rem;
+  }
+  main{max-width:46rem;margin:0 auto}
+  h1{font-size:1.15rem;font-weight:400;line-height:1.3;margin-bottom:.95rem}
+  .row{margin:.48rem 0}
+  @media (min-width:768px){
+    body{font-size:16px;padding:2.5rem 1.5rem 3rem}
+    main{max-width:36rem}
+    h1{margin-bottom:1.2rem}
+    .row{margin:.6rem 0}
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Deheng Ye （叶德珩）</h1>
+
+  <p class="row">Short Bio: I am a Researcher at ByteDance Seed working on foundation models.</p>
+
+  <p class="row">Experience: ByteDance (2026-now), Tencent (2017-2026)</p>
+
+  <p class="row">Selected Projects: SeedXxx model (P&amp;C for now); Agentic Systems on GenMedia (ui-voyager, omni-reasoner, proact); JueWu AI Series: 1.0 (supervised learning), 2.0 (reinforcement learning), 3.0 (hierarchical RL); Code understanding &amp; generation (as a postdoc at Microsoft 2016-2017)</p>
+
+  <p class="row">Selected Publications: "Adaptvision: efficient vision-language models" (2026); "More agents is all you need" (2024); "RLTF" (2023); "Mastering complex control with deep reinforcement learning" (2020); "Convolutional and recurrent neural networks for text categorization" (2017)</p>
+
+  <p class="row">Adjunct Appointments: Director of the Tencent-NTU Joint Research Laboratory (CENTURY) (until 2026)</p>
+
+  <p class="row">Work Performance: was promoted to become the youngest Leader, Director, and Research Partner of Tencent AI before 2025.</p>
+
+  <p class="row">Others: looking for top talents via ydh@bytedance.com or ydyl1991@gmail.com</p>
+
+  <p class="row">Visits Today: <span id="visits">…</span></p>
+</main>
+
+<script>
+(function(){
+  var d = new Date();
+  var key = 'yedeheng_github_io_visits_' + d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
+  var el = document.getElementById('visits');
+  var show = function(v){ if (el && v !== undefined) el.innerText = v; };
+  var get = function(){
+    return fetch('https://countapi.mileshilliard.com/api/v1/get/' + key, {cache:'no-store'})
+      .then(function(r){ return r.json(); })
+      .then(function(d){ show(d.value); });
+  };
+  get().catch(function(){});
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + key, {cache:'no-store'})
+    .then(function(r){ return r.json(); })
+    .then(function(d){ show(d.value); })
+    .catch(function(){ get().catch(function(){}); });
+  setInterval(function(){ get().catch(function(){}); }, 15000);
+})();
+</script>
+</body>
+</html>
